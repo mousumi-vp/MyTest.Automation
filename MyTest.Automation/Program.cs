@@ -33,8 +33,8 @@ IHost host = Host.CreateDefaultBuilder(args)
         // Add services to container here...//Adding Workers
 
         services.AddHostedService<ParkingClearenceWorker>();
-        //services.AddHostedService<InterviewReminderMailWorker>();
-        //services.AddHostedService<DailyScheduleStatusMailWorker>();
+        services.AddHostedService<InterviewReminderMailWorker>();
+        services.AddHostedService<DailyScheduleStatusMailWorker>();
 
         //Setting DB Connection String & appSettings
         services.Configure<WorkerSettings>(hostContext.Configuration.GetSection("appSettings"));
