@@ -5,6 +5,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Google.Apis.Auth" Version="1.68.0" />
+    <PackageReference Include="Google.Apis.Calendar.v3" Version="1.68.0.3396" />
+    <PackageReference Include="Google.Apis.Drive.v3" Version="1.68.0.3373" />
+    <PackageReference Include="Winnovative.PdfToText.NetCore" Version="9.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Database\Database.csproj" />
   </ItemGroup>
 
